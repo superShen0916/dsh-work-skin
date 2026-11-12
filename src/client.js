@@ -1,6 +1,7 @@
 const { createElement: h, useSyncExternalStore } = require('react');
 const inject = ['theme', 'slots', 'configForms'];
 const packageName = 'dsh-work-skin';
+const productName = 'DSH 一键换肤';
 const storageKey = `${packageName}:selected`;
 const skins = new Map(catalog.map((skin) => [`${packageName}-${skin.id}`, skin]));
 const asset = (filename) => require.asset?.(`plugins/${packageName}/assets/${filename}`);
@@ -93,9 +94,9 @@ function apply(ctx) {
   function Gallery() {
     const current = useSyncExternalStore(subscribe, selection);
     const active = skins.get(current);
-    return h('section', { className: 'dsh-work-skin-gallery', 'aria-label': '豆包工作皮肤' },
+    return h('section', { className: 'dsh-work-skin-gallery', 'aria-label': productName },
       h('div', { className: 'dsh-work-skin-gallery-heading' },
-        h('span', null, '豆包工作皮肤'),
+        h('span', null, productName),
         h('button', { type: 'button', onClick: reset, disabled: !active }, '恢复默认')),
       h('details', null,
         h('summary', null, active ? `当前皮肤 · ${active.name}` : '预览并切换皮肤'),
@@ -134,7 +135,7 @@ function apply(ctx) {
     clearBackground();
     if (skins.has(theme.getTheme().preference)) theme.setTheme(previous);
     for (const dispose of installed) dispose();
-  }, 'remove Doubao Work Skin resources');
+  }, 'remove DSH One-Click Skins resources');
   ctx.on('theme/change', ({ preference }) => {
     if (selected && preference === pendingBuiltIn) {
       // A just-saved native appearance can settle after the gallery selection.
@@ -165,7 +166,7 @@ function apply(ctx) {
     }
     showSkin(theme.getTheme().preference);
   }
-  ctx.effect(() => nativeSettings.subscribe(restoreSelection), 'restore saved Doubao Work Skin after settings load');
+  ctx.effect(() => nativeSettings.subscribe(restoreSelection), 'restore saved DSH One-Click Skins theme after settings load');
   restoreSelection();
 }
 

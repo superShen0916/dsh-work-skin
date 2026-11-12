@@ -1,18 +1,18 @@
-# DSH 豆包工作皮肤
+# DSH 一键换肤
 
-将 [Doubao Work Skin](https://github.com/superShen0916/doubao-work-skin) 的 13 套插画皮肤带到 DeepSeek Harness。插件在 DSH 的设置里提供缩略图和切换入口。壁纸随聊天区域裁剪，侧栏、气泡、输入框、代码块和弹窗使用适配后的配色。
+为 DeepSeek Harness 提供 13 套插画主题。在设置里预览、切换并恢复默认外观。壁纸随聊天区域裁剪，侧栏、气泡、输入框、代码块和弹窗使用各主题的配色。
 
 ![海风微语在 DeepSeek Harness 的长对话](docs/screenshots/seaside-breeze.png)
 
 ## 安装和使用
 
-1. 在 DeepSeek Harness 桌面版的侧栏打开 **插件 → 添加插件**，输入 `github:superShen0916/dsh-work-skin#v1.0.0`。
+1. 在 DeepSeek Harness 桌面版的侧栏打开 **插件 → 添加插件**，输入 `github:superShen0916/dsh-work-skin#v1.0.1`。
 2. 安装完成后点击 **立即启用**。
-3. 打开 **设置 → 通用设置 → 豆包工作皮肤**，展开预览并点击一套皮肤。
+3. 打开 **设置 → 通用设置 → DSH 一键换肤**，展开预览并点击一套主题。
 
 选中的皮肤会在同一桌面用户配置中保留。点击 **恢复默认**，回到启用皮肤前的浅色、深色或跟随系统偏好。首次启用插件时，外观由当前 DSH 设置决定。
 
-完整壁纸需要支持插件资源加载的 DSH 版本。本版在 **Windows 桌面版 0.2.2-rc.1** 上实测。 [下载固定版本安装包](https://github.com/superShen0916/dsh-work-skin/releases/tag/v1.0.0)
+完整壁纸需要支持插件资源加载的 DSH 版本。本版在 **Windows 桌面版 0.2.2-rc.1** 上实测。 [下载固定版本安装包](https://github.com/superShen0916/dsh-work-skin/releases/tag/v1.0.1)
 
 ![13 套皮肤的设置页预览](docs/screenshots/gallery.png)
 

@@ -27,7 +27,7 @@ try {
   });
   const content = page.locator('[data-conversation-content]');
   const heading = page.getByRole('heading', { name: '海边工作室 · 皮肤验收' });
-  const gallery = page.getByRole('region', { name: '豆包工作皮肤' });
+  const gallery = page.getByRole('region', { name: 'DSH 一键换肤' });
   const composer = page.locator('[data-composer-card] [contenteditable=true]');
   const report = [];
 
