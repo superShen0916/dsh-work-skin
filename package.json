@@ -1,0 +1,40 @@
+{
+  "name": "dsh-work-skin",
+  "version": "1.0.0",
+  "description": "13 illustrated Doubao Work Skin themes adapted for DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "author": "superShen0916",
+  "repository": "github:superShen0916/dsh-work-skin",
+  "keywords": ["dsh-plugin", "deepseek-harness", "theme", "skin", "wallpaper"],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./assets/*": "./assets/*",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/", "assets/", "cordis.patch.yml"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && node --check lib/client.js",
+    "test": "node --test",
+    "prepack": "npm run check"
+  },
+  "devDependencies": {
+    "playwright-core": "1.65.0"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
