@@ -11,6 +11,8 @@
 
 ![晴窗猫咪的聊天壁纸与代码块配色](docs/screenshots/sunlit-atelier.png)
 
+![风起云庭的聊天壁纸与界面配色](docs/screenshots/windborne-terrace.png)
+
 ## 安装和使用
 
 1. 在 DeepSeek Harness 桌面版的侧栏打开 **插件 → 添加插件**，输入 `github:superShen0916/dsh-work-skin#v1.1.0`。
