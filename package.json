@@ -1,7 +1,7 @@
 {
   "name": "dsh-work-skin",
-  "version": "1.0.1",
-  "description": "DSH 一键换肤 · 13 illustrated themes with adaptive wallpapers for DeepSeek Harness",
+  "version": "1.1.0",
+  "description": "DSH 一键换肤 · 在海边写代码，让窗边猫咪陪你聊天，或上传自己的图片。13 套自适应壁纸与界面配色，重启接着用。",
   "type": "module",
   "license": "MIT",
   "author": "superShen0916",

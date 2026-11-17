@@ -119,3 +119,33 @@ body[data-dsh-work-skin] [data-conversation-content] {
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
+
+.dsh-work-skin-custom {
+  display: grid;
+  min-width: 0;
+  margin: 8px 10px 10px;
+  padding: 10px;
+  gap: 8px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 10px;
+}
+
+.dsh-work-skin-custom label {
+  display: grid;
+  gap: 4px;
+}
+
+.dsh-work-skin-custom :is(input, select, button) {
+  max-width: 100%;
+  min-width: 0;
+  font: inherit;
+}
+
+.dsh-work-skin-custom button {
+  justify-self: start;
+  padding: 5px 12px;
+}
+
+.dsh-work-skin-custom output:empty {
+  display: none;
+}
